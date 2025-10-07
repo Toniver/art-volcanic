@@ -1,17 +1,23 @@
 [build]
+  base = "."
   command = "npm run build"
   publish = "dist"
-  base = "."
 
-# Evita que Netlify intente incluir Sanity
 [build.environment]
   NODE_VERSION = "18"
   NPM_FLAGS = "--legacy-peer-deps"
+  # Variables de entorno públicas para Sanity
+  VITE_SANITY_PROJECT_ID = "3g458xyo"
+  VITE_SANITY_DATASET = "production"
+  VITE_SANITY_API_VERSION = "2023-10-01"
+  # Evita que Netlify bloquee el deploy por “secret scanning”
+  SECRETS_SCAN_OMIT_KEYS = "VITE_SANITY_PROJECT_ID,VITE_SANITY_DATASET,VITE_SANITY_API_VERSION"
 
+# Ignorar la carpeta de Sanity Studio en la build
 [[ignore]]
   paths = ["galeria-cuadros/*"]
 
-# Redirección para SPA (Vite/Vue Router)
+# Redirección para SPA (Vue Router)
 [[redirects]]
   from = "/*"
   to = "/index.html"
