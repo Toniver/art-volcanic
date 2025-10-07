@@ -271,55 +271,75 @@ nav a:hover,
   }
 }
 
-/* === CONTACTO === */
+/* === CONTACTO (corregido simétrico y refinado) === */
 .contacto {
   max-width: 600px;
   margin: 160px auto;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
   border: 2px solid #f5d26a;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   text-align: center;
   backdrop-filter: blur(8px);
+  box-sizing: border-box;
 }
 
 .contacto h2 {
   color: #007f7a;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
 }
 
 .contacto p {
   color: #144040;
+  margin-bottom: 2rem;
 }
 
 .contacto input,
 .contacto textarea {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.9rem 1.1rem;
   margin-top: 0.8rem;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   background: #fff;
   color: #222;
   font-size: 1rem;
+  box-sizing: border-box; /* ✅ Corrige la diferencia entre lados */
+  transition: all 0.3s ease;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: #00a7a0;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 167, 160, 0.4);
+}
+
+.contacto textarea {
+  min-height: 140px;
+  resize: vertical;
 }
 
 .contacto button {
-  margin-top: 1.2rem;
+  margin-top: 1.8rem;
   background: #00a7a0;
   color: #fff;
-  padding: 0.8rem 1.6rem;
+  padding: 0.9rem 1.8rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contacto button:hover {
   background: #f5d26a;
   color: #144040;
+  transform: translateY(-2px);
 }
 
 /* === FOOTER === */
