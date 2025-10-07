@@ -8,7 +8,8 @@
   NPM_FLAGS = "--legacy-peer-deps"
   SECRETS_SCAN_OMIT_KEYS = "VITE_SANITY_PROJECT_ID,VITE_SANITY_DATASET,VITE_SANITY_API_VERSION"
 
+# 👇 ESTA ES LA CLAVE
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "/index.html"
   status = 200
