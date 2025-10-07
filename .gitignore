@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+galeria-cuadros/
+.DS_Store
 
 # Editor directories and files
 .vscode/*
