@@ -3,7 +3,7 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20.19.0"
   NPM_FLAGS = "--legacy-peer-deps"
   SECRETS_SCAN_OMIT_KEYS = "VITE_SANITY_PROJECT_ID,VITE_SANITY_DATASET,VITE_SANITY_API_VERSION"
 
