@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #143333;
   background: 
     linear-gradient(180deg, #b6f1ef 0%, #8cdcd9 50%, #5cbdb7 100%),
@@ -41,7 +41,7 @@ header .navbar-content {
 header h1 a {
   color: #f5d26a;
   text-decoration: none;
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   font-size: 1.8rem;
   text-shadow: 0 0 6px rgba(245, 210, 106, 0.4);
 }
@@ -91,7 +91,7 @@ nav a:hover,
 }
 
 .home h1 {
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #007f7a;
   font-size: 2.3rem;
   margin-bottom: 0.5rem;
@@ -121,7 +121,7 @@ nav a:hover,
   font-size: 2.4rem;
   color: #007f7a;
   margin-bottom: 2rem;
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
@@ -231,7 +231,7 @@ nav a:hover,
 }
 
 .modal-text h3 {
-  font-family: "Comic Sans MS", "Comic Sans";
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #007f7a;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
