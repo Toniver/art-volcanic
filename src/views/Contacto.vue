@@ -2,17 +2,32 @@
   <section class="contacto">
     <h2>Contacto</h2>
     <p>
-      Si te interesa alguna obra o deseas una pieza personalizada, completa el formulario y te responderé pronto.
+      Si te interesa alguna obra o deseas una pieza personalizada, completa el
+      formulario y te responderé pronto.
     </p>
 
-    <form @submit.prevent="enviarFormulario">
-      <input v-model="nombre" type="text" placeholder="Tu nombre" required />
-      <input v-model="email" type="email" placeholder="Tu correo electrónico" required />
-      <textarea v-model="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <!-- Campo oculto para Netlify -->
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>No llenar: <input name="bot-field" /></label>
+      </p>
+
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input
+        type="email"
+        name="correo"
+        placeholder="Tu correo electrónico"
+        required
+      />
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
       <button type="submit">Enviar mensaje</button>
     </form>
-
-    <p v-if="enviado" style="color:#9fe6e6; margin-top:1rem;">✅ Mensaje enviado correctamente</p>
   </section>
 </template>
 
